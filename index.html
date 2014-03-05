@@ -7,7 +7,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
   <script type="text/x-handlebars" data-template-name="application">
+    <h1>Basketball League: Team Rosters</h1>
+    {{outlet}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="home">
+    <h3>League Info</h3>
+      <ul>
+        {{#each item in info}}
+          <li>{{item}}</li>
+        {{/each}}
+      </ul>
     {{outlet}}
   </script>
 
